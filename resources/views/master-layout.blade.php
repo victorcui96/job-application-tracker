@@ -1,11 +1,12 @@
 <!-- Stored in resources/views/layouts/master-layout.blade.php -->
 <!-- This is the master layout file that all other blade view files will extend -->
+
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"">
 
         <title>Job Tracker Application</title>
         <!-- Bootstrap core CSS -->
@@ -20,11 +21,13 @@
     </head>
 
     <body>
+        @include('navbar')
         <div class="container">
             {{-- Any child views will defined their own content sections --}}
             @yield('content')
         </div>
         {{-- Every page will have the same master footer --}}
         @include('footer')
+        <script src="/js/main.js"></script>
     </body>
     </html>

@@ -1,4 +1,3 @@
-
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
@@ -9,86 +8,65 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 .registration-form {
-	h2 {
-		color: red;
-	}
+    h2 {
+        color: red;
+    }
 }
 
 body {
-	background: white;
+    background: white;
 }
 
 // Form <input> styles
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea,
-select {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  display: block;
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
-  width: 150px;
-  background-color: #e8eeef;
-  color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
+body {
+    position: relative;
+}
 
-  html, body {
-                font-family: 'Raleway', sans-serif;
-            }
+.full-height {
+    height: 100vh;
+}
 
-            .full-height {
-                height: 100vh;
-            }
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+.position-ref {
+    position: relative;
+}
 
-            .position-ref {
-                position: relative;
-            }
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+.content {
+    text-align: center;
+}
 
-            .content {
-                text-align: center;
-            }
+.title {
+    font-size: 84px;
+}
 
-            .title {
-                font-size: 84px;
-            }
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
+.m-b-md {
+    margin-bottom: 30px;
+}

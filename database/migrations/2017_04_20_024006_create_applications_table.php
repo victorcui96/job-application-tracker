@@ -19,7 +19,7 @@ class CreateApplicationsTable extends Migration
             $table->string('job_title');
             $table->string('recruiter_first_name');
             $table->string('recruiter_last_name');
-            $table->string('recruiter_email');
+            $table->string('recruiter_email')->unique();
             // FLOAT equivalent for Database, 2 digits in total and 1 after the decimal point
             $table->float('glassdoor_rating', 2, 1);
             // Integer value for average salary of this position
