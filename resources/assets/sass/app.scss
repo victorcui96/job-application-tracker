@@ -1,6 +1,3 @@
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
 // Variables
 @import "variables";
 
@@ -17,7 +14,6 @@
 
 html,
 body {
-    font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
 
@@ -26,46 +22,13 @@ body {
     margin: 0;
     padding-bottom: 6rem;
     min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.full-height {
-    height: 100vh;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dosis', sans-serif;
 }
 
-.flex-center {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.position-ref {
-    position: relative;
-}
-
-.top-right {
-    position: absolute;
-    right: 10px;
-    top: 18px;
-}
-
-.content {
-    text-align: center;
-}
-
-.title {
-    font-size: 84px;
-}
-
-.links > a {
-    color: #636b6f;
-    padding: 0 25px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.m-b-md {
-    margin-bottom: 30px;
+p, span {
+    font-family: 'Open Sans', sans-serif;
 }

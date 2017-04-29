@@ -22,17 +22,12 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3">
-					<button class="btn btn-info">
-						Test Button
-					</button>
-				</div>
-				<div class="col-md-3">
-					<div class="btn btn-info" @click="showForm">
+					<div class="button is-medium is-info" @click="showForm">
 						Create New Application
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>`
 		<ApplicationForm v-if="isCreating" @created="fetchApplications"> </ApplicationForm>
 		<Footer> </Footer>
 

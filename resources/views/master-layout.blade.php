@@ -13,8 +13,8 @@
         <link href = {{ asset("bootstrap/css/bootstrap.css") }} rel="stylesheet" />
         <!-- Bulma -->    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.min.css">
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="/css/app.css">
        
