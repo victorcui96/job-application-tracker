@@ -29,5 +29,6 @@
         {{-- Every page will have the same master footer --}}
         @include('footer')
         <script src="/js/main.js"></script>
+        <script src="https://use.fontawesome.com/eeab459deb.js"></script>
     </body>
     </html>

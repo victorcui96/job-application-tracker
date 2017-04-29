@@ -22,7 +22,7 @@ Route::get('/create-application', function () {
 });
 // Collection REST Routes for Applications
 Route::get('/applications', 'ApplicationController@index');
-Route::post('/applications/create', 'ApplicationController@create');
+Route::post('/applications', 'ApplicationController@create');
 
 // Singular REST Routes for Applications
 // The placeholder name, i.e. 'app', has to match the corresponding parameter name in 'Application Controller'

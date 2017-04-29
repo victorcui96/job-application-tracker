@@ -41577,37 +41577,339 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "application-form columns"
+    staticClass: "application-form"
   }, [_c('div', {
-    staticClass: "field is-grouped is-horizontal"
-  }, [_c('div', {
-    staticClass: "field-label is-normal"
+    staticClass: "field"
   }, [_c('label', {
     staticClass: "label"
   }, [_vm._v("Company")]), _vm._v(" "), _c('p', {
     staticClass: "control"
   }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.company),
+      expression: "company"
+    }],
     staticClass: "input is-hovered",
     attrs: {
       "type": "text"
+    },
+    domProps: {
+      "value": (_vm.company)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.company = $event.target.value
+      }
     }
   })])]), _vm._v(" "), _c('div', {
-    staticClass: "field-label is-normal"
+    staticClass: "field"
   }, [_c('label', {
     staticClass: "label"
   }, [_vm._v("Job Title")]), _vm._v(" "), _c('p', {
     staticClass: "control"
   }, [_c('input', {
-    staticClass: "input ",
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.jobTitle),
+      expression: "jobTitle"
+    }],
+    staticClass: "input",
     attrs: {
       "type": "text"
+    },
+    domProps: {
+      "value": (_vm.jobTitle)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.jobTitle = $event.target.value
+      }
     }
   })])]), _vm._v(" "), _c('div', {
     staticClass: "field"
-  })])])
+  }, [_c('label', {
+    staticClass: "label"
+  }, [_vm._v("Recruiter's Name")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.recruiterName),
+      expression: "recruiterName"
+    }],
+    staticClass: "input",
+    attrs: {
+      "type": "text"
+    },
+    domProps: {
+      "value": (_vm.recruiterName)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.recruiterName = $event.target.value
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "field"
+  }, [_c('label', {
+    staticClass: "label",
+    attrs: {
+      "for": ""
+    }
+  }, [_vm._v(" Recruiter's Email ")]), _vm._v(" "), _c('p', {
+    staticClass: "control has-icons-left"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.recruiterEmail),
+      expression: "recruiterEmail"
+    }],
+    staticClass: "input is-danger",
+    attrs: {
+      "type": "text"
+    },
+    domProps: {
+      "value": (_vm.recruiterEmail)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.recruiterEmail = $event.target.value
+      }
+    }
+  }), _vm._v(" "), _vm._m(0)])]), _vm._v(" "), _c('div', {
+    staticClass: "field"
+  }, [_c('label', {
+    staticClass: "label",
+    attrs: {
+      "for": ""
+    }
+  }, [_vm._v("Glassdoor Rating")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('span', {
+    staticClass: "select"
+  }, [_c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.glassdoorRating),
+      expression: "glassdoorRating"
+    }],
+    attrs: {
+      "name": "",
+      "id": ""
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.glassdoorRating = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": "1"
+    }
+  }, [_vm._v("1")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "1.5"
+    }
+  }, [_vm._v("1.5")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "2.0"
+    }
+  }, [_vm._v("2.0")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "2.5"
+    }
+  }, [_vm._v("2.5")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "3.0"
+    }
+  }, [_vm._v("3.0")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "3.5"
+    }
+  }, [_vm._v("3.5")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "4.0"
+    }
+  }, [_vm._v("4.0")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "4.5"
+    }
+  }, [_vm._v("4.5")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "5.0"
+    }
+  }, [_vm._v("5.0")])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "field"
+  }, [_c('label', {
+    staticClass: "label",
+    attrs: {
+      "for": ""
+    }
+  }, [_vm._v("Average Salary / Year")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.averageSalary),
+      expression: "averageSalary"
+    }],
+    staticClass: "input",
+    attrs: {
+      "type": "number"
+    },
+    domProps: {
+      "value": (_vm.averageSalary)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.averageSalary = $event.target.value
+      },
+      "blur": function($event) {
+        _vm.$forceUpdate()
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "field"
+  }, [_c('label', {
+    staticClass: "label"
+  }, [_vm._v("Status")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('span', {
+    staticClass: "select"
+  }, [_c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.status),
+      expression: "status"
+    }],
+    attrs: {
+      "name": "",
+      "id": ""
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.status = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+      }
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": "accepted"
+    }
+  }, [_vm._v("Accepted")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "applied"
+    }
+  }, [_vm._v("Applied")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "in-progress"
+    }
+  }, [_vm._v("In-progress")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "rejected"
+    }
+  }, [_vm._v("Rejected")])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "field"
+  }, [_c('label', {
+    staticClass: "label",
+    attrs: {
+      "for": ""
+    }
+  }, [_vm._v("Cover Letter")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.coverLetter),
+      expression: "coverLetter"
+    }],
+    staticClass: "textarea",
+    attrs: {
+      "name": "",
+      "id": "",
+      "placeholder": "Paste Cover Letter here"
+    },
+    domProps: {
+      "value": (_vm.coverLetter)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.coverLetter = $event.target.value
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "field"
+  }, [_c('label', {
+    staticClass: "label",
+    attrs: {
+      "for": ""
+    }
+  }, [_vm._v("Offer Details")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.offerDetails),
+      expression: "offerDetails"
+    }],
+    staticClass: "textarea",
+    attrs: {
+      "name": "",
+      "id": "",
+      "placeholder": "Only if you've been accepted!"
+    },
+    domProps: {
+      "value": (_vm.offerDetails)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.offerDetails = $event.target.value
+      }
+    }
+  })])]), _vm._v(" "), _c('button', {
+    staticClass: "button is-primary is-outlined is-medium",
+    attrs: {
+      "disabled": _vm.isLoading
+    },
+    on: {
+      "click": _vm.create
+    }
+  }, [_vm._v("Create!")])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', {
+    staticClass: "icon is-small is-left"
+  }, [_c('i', {
+    staticClass: "fa fa-envelope"
+  })])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -41646,13 +41948,143 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
   name: 'ApplicationForm',
 
   data: function data() {
-    return {};
+    return {
+      company: '',
+      jobTitle: '',
+      recruiterName: '',
+      recruiterEmail: '',
+      glassdoorRating: 0,
+      averageSalary: 0,
+      status: '',
+      coverLetter: '',
+      offerDetails: '',
+      isLoading: false
+    };
+  },
+
+
+  methods: {
+    create: function create() {
+      console.log('Application form -> created');
+      if (this.loading) {
+        // Don't submit a 2nd request to database while 1st is already being sent
+        alert('request is already being made');
+        return false;
+      }
+      this.isLoading = true;
+      this.sendRequest();
+    },
+    sendRequest: function sendRequest() {
+      var _this = this;
+
+      axios.post('/applications', {
+        // Save all of the user's request fields into the database
+        company: this.company,
+        job_title: this.jobTitle,
+        recruiter_name: this.recruiterName,
+        recruiter_email: this.recruiterEmail,
+        glassdoor_rating: this.glassdoorRating,
+        average_salary: this.averageSalary,
+        status: this.status,
+        cover_letter: this.coverLetter,
+        offer_details: this.offerDetails
+      }).then(function (response) {
+        // This is the callback function called right after the post request is made
+        console.log('ApplicationForm -> successful post request sent');
+        // Reset the form fields to be blank so user can create another application
+        _this.reset();
+        _this.$emit('created');
+      }).catch(function (error) {
+        console.error('Something went wrong with the request');
+        console.log(error);
+        _this.$emit('error');
+      });
+    },
+    reset: function reset() {
+      // Clear out form input fields
+      this.company = '';
+      this.jobTitle = '';
+      this.recruiterName = '';
+      this.recruiterEmail = '';
+      this.glassdoorRating = 0;
+      this.averageSalary = 0;
+      this.status = '';
+      this.coverLetter = '';
+      this.offerDetails = '';
+      this.isLoading = false;
+    }
   }
 });
 
@@ -41661,7 +42093,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(41)();
-exports.push([module.i, "\n.label[data-v-1ab22831] {\n\tcolor: #000;\n\tfont-size: 110%;\n}\n.control input[data-v-1ab22831] {\n}\n", ""]);
+exports.push([module.i, "\n.label[data-v-1ab22831] {\n\t\tcolor: #000;\n\t\tfont-size: 110%;\n}\n.control input[data-v-1ab22831] {\n}\n.control.has-icons-left .input[data-v-1ab22831] {\n    padding-left: 2.25em;\n}\n", ""]);
 
 /***/ }),
 /* 59 */
