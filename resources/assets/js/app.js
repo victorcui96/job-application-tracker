@@ -17,6 +17,9 @@ window.Vue = require('vue');
 
 Vue.component('App', require('./components/App.vue'));
 Vue.component('ApplicationForm', require('./components/ApplicationForm.vue'));
+Vue.component('Application', require('./components/Application.vue'));
+Vue.component('Footer', require('./components/Footer.vue'));
+
 
 const app = new Vue({
     el: '#app'

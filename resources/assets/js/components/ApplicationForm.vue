@@ -83,7 +83,8 @@
 		</div>
 		<!-- Submit Button to create an application -->
 		<!-- v-bind directive is used to reactivly update an HTML attribute -->
-		<button class="button is-primary is-outlined is-medium" v-on:click="create" :disabled="isLoading">Create!</button>
+		<button id="create-button" class="button is-primary is-outlined is-medium" v-on:click="create" :disabled="isLoading">Create!</button>
+		
 	</div>
 </template>
 
@@ -93,18 +94,18 @@ export default {
   name: 'ApplicationForm',
 
   data () {
-    return {
-    	company: '',
-    	jobTitle: '',
-    	recruiterName: '',
-    	recruiterEmail: '',
-    	glassdoorRating: 0,
-    	averageSalary: 0,
-    	status: '',
-    	coverLetter: '',
-    	offerDetails: '',
-    	isLoading: false
-    };
+	return {
+	    	company: '',
+	    	jobTitle: '',
+	    	recruiterName: '',
+	    	recruiterEmail: '',
+	    	glassdoorRating: 0,
+	    	averageSalary: 0,
+	    	status: '',
+	    	coverLetter: '',
+	    	offerDetails: '',
+	    	isLoading: false
+	    };
   },
 
   methods: {
@@ -165,6 +166,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+	#create-button {
+	    margin-top: 20px;
+	    margin-bottom: 90px;
+	}
 	.label {
 		color: #000;
 		font-size: 110%;

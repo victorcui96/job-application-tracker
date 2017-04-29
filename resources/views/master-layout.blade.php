@@ -26,8 +26,11 @@
             {{-- Any child views will defined their own content sections --}}
             @yield('content')
         </div>
-        {{-- Every page will have the same master footer --}}
-        @include('footer')
+        {{-- JQuery --}}
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
         <script src="/js/main.js"></script>
         <script src="https://use.fontawesome.com/eeab459deb.js"></script>
     </body>

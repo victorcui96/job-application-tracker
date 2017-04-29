@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="all-contacts" v-if="this.isCreating === false">
+		<div class="all-contacts">
 			<div class="row">
 				<div class="col-md-12" >
 					<h2>Welcome to the Job Application Tracker application!</h2>
@@ -33,7 +33,9 @@
 				</div>
 			</div>
 		</div>
-		<ApplicationForm v-else @created="fetchApplications"> </ApplicationForm>
+		<ApplicationForm v-if="isCreating" @created="fetchApplications"> </ApplicationForm>
+		<Footer> </Footer>
+
 	</div>
 </template>
 
@@ -41,11 +43,13 @@
 import axios from 'axios';
 import ApplicationForm from './ApplicationForm';
 import Application from './Application'
+import Footer from './Footer'
 
 export default {
   components: {
 	ApplicationForm,
-	Application
+	Application,
+	Footer
  },
   name: 'App',
 
@@ -57,7 +61,7 @@ export default {
   },
 
   mounted () {
-  	console.log('mounted')
+  	this.fetchApplications();
   },
 
   methods: {
